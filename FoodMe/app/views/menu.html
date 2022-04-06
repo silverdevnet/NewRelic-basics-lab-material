@@ -34,11 +34,11 @@
     <h4>Menu</h4>
 
 
-    <ul>
+    <ul id="menu">
       <li ng-repeat="menuItem in restaurant.menuItems">
         <a href ng-click="cart.add(menuItem, restaurant)">
-          <span>{{menuItem.name}}</span>
-          <span>{{menuItem.price}}</span>
+          <span id="menuItem">{{menuItem.name}}</span>
+          <span id="itemPrice">{{menuItem.price}}</span>
           <i class="icon-plus-sign"></i>
         </a>
       </li>
